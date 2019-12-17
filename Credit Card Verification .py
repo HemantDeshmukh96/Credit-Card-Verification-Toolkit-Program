@@ -1,0 +1,52 @@
+num=int(input("Enter 8 digit Credit Card Number :"))
+n1=num//10000000
+n11=num%10000000
+n2=n11//1000000
+n21=n11%1000000
+n3=n21//100000
+n31=n21%100000
+n4=n31//10000
+n41=n31%10000
+n5=n41//1000
+n51=n41%1000
+n6=n51//100
+n61=n51%100
+n7=n61//10
+n8=n61%10
+a=n8+n6+n4+n2
+n12=n1*2
+n32=n3*2
+n52=n5*2
+n72=n7*2
+if(n12<=9):
+    n15=n12
+else:
+    n13=n12//10
+    n14=n12%1;
+    n15=n13+n14
+if(n32<=9):
+    n35=n32
+else:
+    n33=n32//10
+    n34=n32%10
+    n35=n33+n34
+if(n52<=9):
+    n55=n52
+else:
+    n53=n52//10
+    n54=n52%10
+    n55=n53+n54
+if(n72<=9):
+    n75=n72
+else:
+    n73=n72//10
+    n74=n72%10
+    n75=n73+n74
+b=n15+n35+n55+n75
+c=a+b
+n81=c//10
+n82=c%10
+if(n82==0):
+    print("Card Verified")
+else:
+    print("Invalid Card")
